@@ -7,3 +7,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+p span {
+    display: block;
+}
