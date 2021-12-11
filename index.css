@@ -2,6 +2,7 @@
 body {
     font-family: Roboto, sans-serif;
     color: white;
+    font-size: large;
 }
 .container-fluid {
     background-image: url("images/backgroundimage.jpg");
@@ -40,12 +41,18 @@ p span {
     line-height: 2rem;
 }
 /* forms */
+.proof {
+    background-color: #532B2B;
+}
+.proof h2 {
+    padding: 1rem;
+}
 .forms {
-    margin-left: 3rem;
+    margin-left: 10rem;
 }
 .form-group-row {
-    margin-left: 3rem;
+    margin-left: 10rem;
 }
 button {
-    margin-left: 3rem;
+    margin-left: 10rem;
 }
