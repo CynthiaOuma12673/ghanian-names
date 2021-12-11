@@ -39,3 +39,13 @@ p span {
 .female ul {
     line-height: 2rem;
 }
+/* forms */
+.forms {
+    margin-left: 3rem;
+}
+.form-group-row {
+    margin-left: 3rem;
+}
+button {
+    margin-left: 3rem;
+}
