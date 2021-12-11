@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <div class="container">                 
             <!-- heading -->
-            <div class="heading">
+            <div class="text-center">
                 <h1>GHANIAN AKAN NAMES</h1>
             </div>
             <!-- about web -->
@@ -33,7 +33,7 @@
             <div class="names">
                 <div class="male">
                     <h2>Male</h2>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li>Sunday:Kwasi</li>
                         <li>Monday:Kwadwo</li>
                         <li>Tuesday:Kwabena</li>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="female">
                     <h2>Female</h2>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li>Sunday:Akosua</li>
                         <li>Monday:Adwoa</li>
                         <li>Tuesday:Abenaa</li>
@@ -64,9 +64,24 @@
                     <span>the week from a specific date, below is a way in which one can know their ghanian</span>
                     <span>names from date of birth.</span>
                 </p>
+            </div>
+            <!-- proof section -->
+            <div class="proof">
+                <h2 class="text-center">Proof</h2>
+                <p>Enter your birthday</p>
+                <form action="form">
+                    <label for="example-number-input" class="col-2 col-form-label">Gender</label>
+                </form>
+                <div class="col-7">
+                    <select name="gender" id="sex">
+                        <option value="selected">Gender</option>
+                            <option value="1">Female</option>
+                            <option value="2">Male</option>
+                        </select>
+                    </div>
 
             </div>
-
+            <button type="button" class="btn btn-submit">Submit</button>
 
         </div>
 
