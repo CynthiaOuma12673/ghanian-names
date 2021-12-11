@@ -1,3 +1,4 @@
+/* body */
 body {
     font-family: Roboto, sans-serif;
     color: white;
@@ -7,6 +8,34 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* paragraphs */
+p {
+    background-color: #532B2B;
+}
 p span {
     display: block;
+}
+/* names */
+.names {
+    display: flex;
+}
+.names .male {
+    background-color: #532B2B;
+    width: 50%;
+    margin-right: 30rem;
+    margin-left: 5rem;
+    padding: 2rem;
+} 
+.male ul {
+    line-height: 2rem;
+}
+.names .female {
+    background-color: #532B2B;
+    width: 50%;
+    margin-right: 30rem;
+    margin-left: 5rem;
+    padding: 2rem;
+}
+.female ul {
+    line-height: 2rem;
 }
