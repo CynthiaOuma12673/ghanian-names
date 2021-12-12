@@ -43,6 +43,7 @@ p span {
 /* forms */
 .proof {
     background-color: #532B2B;
+    height: 80vh;
 }
 .proof h2 {
     padding: 1rem;
