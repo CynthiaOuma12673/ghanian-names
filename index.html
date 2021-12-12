@@ -67,7 +67,7 @@
                 <h2 class="text-center">Proof</h2>
                 <div class="forms">
                 <h3>Enter your birthday</h3>
-                <form action="form">
+                <!-- <form action="form">
                     <label for="example-number-input" class="col-2 col-form-label">Gender</label>
                 </form>
                 <div class="col-7">
@@ -75,8 +75,8 @@
                             <option value="selected">Female</option>
                             <option value="1">Male</option>
                         </select>
-                    </div>
-                </div>
+                    </div> -->
+                </div> 
                 <div class="form-group-row">
                     <label for="example-number-input" class="col-2 col-form-label">Day</label>
                     <div class="col-7">
@@ -141,12 +141,20 @@
                 <div class="form-group-row">
                     <label for="example-number-input" class="col-2 col-form-label">Year</label>
                     <div class="col-7">
-                        <input  name=year class="form-control" type="text" value="19" size=4 maxlength=4  id="yearNumber">
+                        <input  name=year class="form-control" type="text" value="18" size=4 maxlength=4  id="yearNumber">
                     </div>
                 </div>
-                <div>
-            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                <br>
+                <div class="gndr">
+                <p>Gender</p>
             </div>
+                <br>
+                <div class="button">
+                    <button  class="btn  btn-primary btn-lg"  onClick="calculateFemale()"> FEMALE</button>
+                    <p id="female-name"></p>
+                    <button  class="btn btn-primary btn-lg"  onClick="calculateMale()"> MALE</button>
+                    <p id="male-name"></p>
+                    </div>
         
         </div>
     </div>

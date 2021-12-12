@@ -53,6 +53,13 @@ p span {
 .form-group-row {
     margin-left: 10rem;
 }
-button {
+.gndr {
     margin-left: 10rem;
+}
+
+.button {
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
 }
