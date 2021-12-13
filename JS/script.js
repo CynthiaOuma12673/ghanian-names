@@ -1,32 +1,28 @@
 
-var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var dayValue, d, DD, MM, YY, CC, yr;
 
-var form = document.getElementById('forms');
+let form = document.getElementById('form');
 form.addEventListener('submit', (event)=> {
     event.preventDefault();
-    var gndr = document.querySelector('input[name="gndr"]:checked')
-    var birthDate = document.getElementById('date').value;
+    let gender = document.querySelector('input[name="gender"]:checked');
+    let dateOfBirth = document.getElementById('date').value;
 
-    birthDate = new Date (birthDate);
+    dateOfBirth= new Date (dateOfBirth);
 
-    var dayOfWeek = birthDate.getDay();
+    let dayOfWeek = dateOfBirth.getDay();
 
-    var akanName;
+    let akanNames;
     femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
-    if (gndr==='male') {
-        akanName = maleNames[dayOfWeek];
+    if (gender==='male') {
+        akanNames= maleNames[dayOfWeek];
 
     }
     else {
-        akanName = femaleNames[dayOfWeek]
+        akanNames = femaleNames[dayOfWeek];
     }
 
-    document.getElementById("results").innerHTML = '<h3>You got it</h3><p>Your Akan Name is </p> <h4>${akanName}</h4>'
-    document.getElementById("forms").reset();
+    document.getElementById("submit").innerHTML = '<h4>You got it!</h4><p>Your Akan Name is</p><h5>{akanNames} </h5>';
+    document.getElementById("form").reset();
 
-})
+});
