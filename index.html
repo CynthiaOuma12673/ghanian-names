@@ -64,32 +64,35 @@
             </div>
             <!-- proof section -->
             <div class="proof">
-                <h2 class="text-center">Proof</h2>
-                <div class="forms">
-                <h3>Enter your birthday</h3>
-                    <form onsubmit="">
-                    <label for="yearname">Year</label><br>
-                <input id="years" type="text" class="name" name="yearname" maxlength="4" required><br>
-                <label for="monthname">Month</label>
-                <br>
-                <input id="month" type="text" class="name" name="monthname" maxlength="2" required><br>
-                <label for="dayname">Day</label>
-                <br>
-                <input id="day" type="text" class="name" name="dayname" min="01" max="31" required><br><br>
-                <label>Gender</label>
-                <br>
-                <label for="sexname"><input type="radio" name="gender" value="male" class="gender">Male</label>
-                <br>
-                <label for="sexname"><input type="radio" name="gender" value="female" class="gender">Female</label>
-                <br>
-                <input type="submit" onclick="main(event); return false;" value="Submit" class="submit">
-            </form>
-            </div>
-            </div>
+                <h2 class="text-center">Proof</h>
+                <h3 class="text-center">Enter your birthday</h3>
+                <form id="forms">
+                    <div class="date">
+                        <p>Birth Date</p>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    
+                    <p>Gender</p>
+                    <div class="gndr">
+                            <div>
+                            <label for="female">Female</label>
+                            <input type="radio" name="gndr" id="female" value="female">
+                        </div>
+                        <div>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gndr" id="male" value="male">
+                        </div>
+                    </div>
+                    <div>
+                        <br>
+
+                        <input type="submit" id="submit">
+                    </div>
+                    </form>
+                </div>
 </div>
 </div>
-<!-- js link -->
 <script src="JS/script.js"></script>
-    
+
 </body>
 </html>
