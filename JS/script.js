@@ -6,18 +6,18 @@ var dayValue, d, DD, MM, YY, CC, yr;
 
 
 function getDay() {
-    yr = document.getElementById("year").value;
+    yr = document.getElementById("years").value;
     CC = parseInt(yr.substring(0, 2));
     YY = parseInt(yr.substring(2, 4));
     MM = parseInt(document.getElementById("month").value);
     DD = parseInt(document.getElementById("day").value);
-    ddy = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+    ddy = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7; 
     var x = Math.floor(ddy)
     return x;
 }
 function getUserGender(dv) {
     var g = document.getElementsByName("gender")
-    var gndr;
+    var gndr; 
     if (g[0].checked == true) {
         gndr = "male";
     } else if (g[1].checked == true) {
@@ -81,10 +81,10 @@ function getUserGender(dv) {
     }
 }
 function validateForm() {
-    yr = document.getElementById("year").value;
+    yr = document.getElementById("years").value;
     const d = new Date();
     let year = d.getFullYear();
-    if (yr > year) {
+    if (years > year) {
         alert("The year is invalid")
         return false
     }
@@ -103,10 +103,9 @@ function validateForm() {
 }
 function main(event) {
     event.preventDefault();
-    if(validateForm()){
+    if(validateForm()){ 
     dayValue = getDay();
     getUserGender(dayValue)}
-
     return false
 }
 }

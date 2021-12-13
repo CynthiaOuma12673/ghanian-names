@@ -43,24 +43,11 @@ p span {
 /* forms */
 .proof {
     background-color: #532B2B;
-    height: 80vh;
+    height: 60vh;
 }
 .proof h2 {
     padding: 1rem;
 }
 .forms {
     margin-left: 10rem;
-}
-.form-group-row {
-    margin-left: 10rem;
-}
-.gndr {
-    margin-left: 10rem;
-}
-
-.button {
-    margin-left: 10rem;
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
 }

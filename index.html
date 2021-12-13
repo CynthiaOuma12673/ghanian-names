@@ -69,25 +69,26 @@
                 <h3>Enter your birthday</h3>
                     <form onsubmit="">
                     <label for="yearname">Year</label><br>
-                <input id="year" type="text" class="name" name="yname" maxlength="4" required><br>
-                <label for="monthname">Month of Birth:</label>
+                <input id="years" type="text" class="name" name="yearname" maxlength="4" required><br>
+                <label for="monthname">Month</label>
                 <br>
-                <input id="month" type="text" class="name" name="mname" maxlength="2" required><br>
+                <input id="month" type="text" class="name" name="monthname" maxlength="2" required><br>
                 <label for="dayname">Day</label>
                 <br>
-                <input id="day" type="text" class="name" name="dname" maxlength="2" required><br><br>
+                <input id="day" type="text" class="name" name="dayname" min="01" max="31" required><br><br>
                 <label>Gender</label>
                 <br>
                 <label for="sexname"><input type="radio" name="gender" value="male" class="gender">Male</label>
                 <br>
                 <label for="sexname"><input type="radio" name="gender" value="female" class="gender">Female</label>
-                <br><br>
+                <br>
                 <input type="submit" onclick="main(event); return false;" value="Submit" class="submit">
             </form>
             </div>
             </div>
 </div>
 </div>
+<!-- js link -->
 <script src="JS/script.js"></script>
     
 </body>
