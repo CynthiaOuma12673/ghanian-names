@@ -1,28 +1,27 @@
 
-
-let form = document.getElementById('form');
-form.addEventListener('submit', (event)=> {
+var forms = document.getElementById('forms');
+forms.addEventListener('submit', (event)=> {
     event.preventDefault();
-    let gender = document.querySelector('input[name="gender"]:checked');
-    let dateOfBirth = document.getElementById('date').value;
+    var gndr = document.querySelector('input[name="gndr"]:checked');
+    var birthDate = document.getElementById('date').value;
 
-    dateOfBirth= new Date (dateOfBirth);
+    birthDate= new Date (birthDate);
 
-    let dayOfWeek = dateOfBirth.getDay();
+    var weekDay = birthDate.getDay();
 
-    let akanNames;
+    var akanNames;
     femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
-    if (gender==='male') {
-        akanNames= maleNames[dayOfWeek];
+    if (gndr==='male') {
+        akanNames= maleNames[weekDay];
 
     }
     else {
-        akanNames = femaleNames[dayOfWeek];
+        akanNames = femaleNames[weekDay];
     }
 
-    document.getElementById("submit").innerHTML = '<h4>You got it!</h4><p>Your Akan Name is</p><h5>{akanNames} </h5>';
-    document.getElementById("form").reset();
+    document.getElementById("output").innerHTML = `<h4>You got it!</h4><p>Your Akan Name is</p><h5>${akanNames} </h5>`;
+    document.getElementById("forms").reset();
 
 });
